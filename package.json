@@ -1,0 +1,11 @@
+{
+  "name": "four-card-feature-project",
+  "version": "1.0.0",
+  "description": "A basic four card layout for practice in html/css from FrontEnd Mentors",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chris Arsenault",
+  "license": "ISC"
+}

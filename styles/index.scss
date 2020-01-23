@@ -1,0 +1,28 @@
+//Colors
+$red: hsl(0, 78%, 62%);
+$cyan: hsl(180, 62%, 55%);
+$orange: hsl(34, 97%, 64%);
+$blue: hsl(212, 86%, 64%);
+$darkBlue: hsl(234, 12%, 34%);
+$lightGray: hsl(0, 0%, 98%);
+$grayBlue: hsl(229, 6%, 66%);
+
+$poppinsFont: "Poppins", sans-serif;
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  text-align: center;
+  font-size: 15px;
+  font-family: $poppinsFont;
+}
+
+//Footer Styling
+footer.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer.attribution a {
+  color: hsl(228, 45%, 44%);
+}
