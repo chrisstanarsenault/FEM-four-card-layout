@@ -9,6 +9,10 @@ $grayBlue: hsl(229, 6%, 66%);
 
 $poppinsFont: "Poppins", sans-serif;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin-left: auto;
   margin-right: auto;
@@ -16,13 +20,105 @@ body {
   text-align: center;
   font-size: 15px;
   font-family: $poppinsFont;
+  background-color: $lightGray;
+}
+
+//Header styling
+header {
+  padding-top: 6rem;
+
+  & h2 {
+    font-size: 2.35rem;
+    letter-spacing: 1px;
+    margin: 0;
+    color: $darkBlue;
+    height: 50px;
+
+    &:first-child {
+      font-weight: 200;
+    }
+  }
+
+  &.sub-heading {
+    color: $darkBlue;
+  }
+
+  & h3 {
+    color: $grayBlue;
+    font-weight: 200;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+//Main container
+main {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+
+  & article {
+    margin: 0 1rem;
+    position: relative;
+    width: 23.333rem;
+    height: 16.666rem;
+    padding: 2rem;
+    text-align: left;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 5px 3px 30px $grayBlue;
+  }
+
+  & article h1 {
+    color: $darkBlue;
+    margin: 0;
+  }
+
+  & article p {
+    padding-top: 0.5rem;
+    color: $grayBlue;
+    line-height: 1.6rem;
+    margin: 0;
+  }
+
+  & article img {
+    position: absolute;
+    //float: right;
+    bottom: 2rem;
+    right: 2rem;
+  }
+
+  & .card-1-cyan {
+    border-top: 4px solid $cyan;
+    align-self: center;
+  }
+
+  & .card-2-red {
+    border-top: 4px solid $red;
+  }
+
+  & .card-3-orange {
+    border-top: 4px solid $orange;
+    margin-top: 2rem;
+  }
+
+  & .card-4-blue {
+    border-top: 4px solid $blue;
+    align-self: center;
+  }
 }
 
 //Footer Styling
-footer.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-footer.attribution a {
-  color: hsl(228, 45%, 44%);
+footer {
+  margin-top: 4rem;
+
+  &.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  &.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }

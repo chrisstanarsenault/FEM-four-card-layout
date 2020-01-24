@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
       rel="icon"
       type="image/png"
@@ -16,41 +15,46 @@
       href="https://fonts.googleapis.com/css?family=Poppins:200,400,600&display=swap"
       rel="stylesheet"
     />
-
     <title>Frontend Mentor | Four card feature section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
+
   <body>
     <header>
-      <h2>Reliable, efficient delivery</h2>
-      <h2>Powered by Technology</h2>
+      <h2 class="main-heading">Reliable, efficient delivery</h2>
+      <h2 class="sub-heading">Powered by Technology</h2>
       <h3>
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </h3>
     </header>
+
     <main>
-      <article>
-        Supervisor Monitors activity to identify project roadblocks
+      <article class="card-1-cyan">
+        <h1>Supervisor</h1>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" />
       </article>
-      <article>
-        Team Builder Scans our talent network to create the optimal team for
-        your project
-      </article>
-      <article>Karma Regularly evaluates our talent to ensure quality</article>
-      <article>
-        Calculator Uses data from past projects to provide better delivery
-        estimates
+
+      <div class="two-card-container">
+        <article class="card-2-red">
+          <h1>Team Builder</h1>
+          <p>
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img src="./images/icon-team-builder.svg" />
+        </article>
+
+        <article class="card-3-orange">
+          <h1>Karma</h1>
+          <p>Regularly evaluates our talent to ensure quality</p>
+          <img src="./images/icon-karma.svg" />
+        </article>
+      </div>
+
+      <article class="card-4-blue">
+        <h1>Calculator</h1>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" />
       </article>
     </main>
 
